@@ -1,0 +1,100 @@
+/* Variables pour modifier facilement les couleurs */
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #3498db;
+    --bg-color: #f4f7f6;
+    --text-color: #333;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 20px;
+}
+
+/* Menu de navigation */
+nav {
+    background: var(--primary-color);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+h1, h2 {
+    color: var(--primary-color);
+}
+
+img {
+    border-radius: 50%; 
+    border: 3px solid var(--accent-color);
+    object-fit: cover;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+form {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+input[type="submit"] {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--primary-color);
+}
